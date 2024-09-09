@@ -118,13 +118,14 @@
   color: "#bd5902"
   metabolisms:
     Medicine:
+      metabolismRate : 0.25 # Umbra Change
       effects:
       - !type:HealthChange
         damage:
           types:
-            Radiation: -3
+            Radiation: -2 # Umbra Change
           groups:
-            Brute: 0.5
+            Brute: .75 # Umbra Change
 
 - type: reagent
   id: Bicaridine
@@ -370,6 +371,7 @@
   color: "#4cb580"
   metabolisms:
     Medicine:
+      metabolismRate : 0.25 # Umbra change
       effects:
       - !type:HealthChange
         damage:
@@ -556,14 +558,15 @@
         min: 4
   metabolisms:
     Medicine:
+      metabolismRate : 0.25 # Umbra change
       effects:
       - !type:HealthChange
         damage:
           types:
-            Cellular: -1
-            Radiation: 1
+            Cellular: -0.5 # Umbra Change
+            Radiation: 0.5 # Umbra Change
       - !type:ChemVomit
-        probability: 0.05
+        probability: 0.025 # Umbra change
 
 - type: reagent
   id: PolypyryliumOligomers
@@ -669,7 +672,7 @@
       - !type:HealthChange
         damage:
           types:
-            Caustic: -5
+            Caustic: -3 # Umbra change
 
 - type: reagent
   id: Stellibinin
@@ -940,11 +943,12 @@
   color: "#e0a5b9"
   metabolisms:
     Medicine:
+      metabolismRate : 0.25 # Umbra change
       effects:
       - !type:HealthChange
         damage:
           types:
-            Caustic: -3
+            Caustic: -2 # umbra change
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
